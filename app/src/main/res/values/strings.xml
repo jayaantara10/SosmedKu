@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">SosmedKu</string>
+
+    <string name="str_title_login">LOGIN.</string>
+    <string name="str_title_username">Username</string>
+    <string name="str_hint_username">Username</string>
+    <string name="str_title_password">Password</string>
+    <string name="str_hint_password">Password</string>
+    <string name="str_btn_login">Login</string>
+    <string name="str_kalimat_register">belum punya akun?</string>
+    <string name="str_register">Daftar Disini</string>
+    <string name="str_forgot_password">Anda lupa password?</string>
+    <string name="str_mark">TinggalIn 2021</string>
+
+    <string name="str_welcome">Selamat Datang,</string>
+    <string name="str_welcome2">Disini kamu bisa melihat detail akun sosmed mu</string>
+    <string name="str_hint_search">Cari akunmu kalo kamu lupa</string>
+
+    <string name="str_title_data_sosmed">Data Sosmed</string>
+    <string-array name="sosmed_array">
+        <item>Pilih Sosial Media</item>
+        <item>Facebook</item>
+        <item>Twiter</item>
+        <item>Instagram</item>
+        <item>Tiktok</item>
+        <item>Snapchat</item>
+        <item>Linkedin</item>
+        <item>WhatsApp</item>
+        <item>Telegram</item>
+        <item>Line</item>
+        <item>YouTube</item>
+        <item>Discord</item>
+    </string-array>
+    <string name="str_sosmed">Sosmed</string>
+    <string name="str_hint_inisial_akun">Inisial Akun</string>
+    <string name="str_hint_data_email">Email</string>
+    <string name="str_hint_data_username">Username</string>
+    <string name="str_hint_data_password">Password</string>
+    <string name="str_hint_con_password">Konfirmasi Password</string>
+    <string name="str_status_akun">Status Akun</string>
+    <string name="str_status_nonaktif">Nonaktif</string>
+    <string name="str_status_aktif">Aktif</string>
+    <string name="str_data_prioritas">Skala Prioritas 1-10</string>
+    <string name="str_tanda_bisnis">Tandai sebagai akun bisnis</string>
+    <string name="str_tanda_bisnis_popup">Status Akun Bisnis</string>
+    <string name="str_btn_cancel">Batal</string>
+    <string name="str_btn_okey">okey</string>
+
+    <string name="str_title_data_akun">Data Akun</string>
+    <string name="str_btn_edit">EDIT</string>
+    <string name="str_btn_kembali">KEMBALI</string>
+
+    <string name="str_data_user">Data User</string>
+    <string name="str_edit_user">Edit User</string>
+    <string name="str_edit_sosmed">Edit Sosmed</string>
+    <string name="str_btn_simpan">SIMPAN</string>
+    <string name="str_btn_regist">REGIST</string>
+    <string name="str_btn_logout">LOGOUT</string>
+    <string name="str_btn_hapus">HAPUS</string>
+</resources>

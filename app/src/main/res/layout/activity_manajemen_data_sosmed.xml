@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.ManajemenDataSosmedActivity"
+    android:background="@color/yelow">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/comicbd"
+                android:text="@string/str_title_data_sosmed"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/bg_edittext"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edt_inisial_akun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="15dp"
+                            android:background="@null"
+                            android:drawableStart="@drawable/ic_baseline_title_24"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/comic"
+                            android:hint="@string/str_hint_inisial_akun"
+                            android:inputType="textPersonName"
+                            android:nextFocusDown="@+id/spnr_sosmed"
+                            android:selectAllOnFocus="true"
+                            android:textColorHint="@color/gray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/bg_edittext"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spnr_sosmed"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:nextFocusDown="@+id/edt_email"
+                        android:selectAllOnFocus="true"/>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/bg_edittext"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="15dp"
+                            android:background="@null"
+                            android:drawableStart="@drawable/ic_baseline_email_24"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/comic"
+                            android:hint="@string/str_hint_data_email"
+                            android:inputType="textEmailAddress"
+                            android:nextFocusDown="@id/edt_username"
+                            android:selectAllOnFocus="true"
+                            android:textColorHint="@color/gray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/bg_edittext"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edt_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="15dp"
+                            android:background="@null"
+                            android:drawableStart="@drawable/ic_baseline_person_24"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/comic"
+                            android:hint="@string/str_hint_data_username"
+                            android:inputType="textShortMessage"
+                            android:nextFocusDown="@id/edt_password"
+                            android:selectAllOnFocus="true"
+                            android:textColorHint="@color/gray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/bg_edittext"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="15dp"
+                            android:background="@null"
+                            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/comic"
+                            android:hint="@string/str_hint_data_password"
+                            android:inputType="textPassword"
+                            android:nextFocusDown="@id/edt_con_password"
+                            android:selectAllOnFocus="true"
+                            android:textColorHint="@color/gray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/comicbd"
+                        android:text="@string/str_status_akun"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/yelow"
+                        android:textSize="18sp"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_group_status"
+                        android:orientation="horizontal">
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rb_aktif"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/dark_teal"
+                            android:fontFamily="@font/comic"
+                            android:text="@string/str_status_aktif"
+                            android:checked="false"
+                            android:textSize="14sp" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rb_nonkatif"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/dark_teal"
+                            android:fontFamily="@font/comic"
+                            android:text="@string/str_status_nonaktif"
+                            android:checked="false"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="13">
+
+                        <TextView
+                            android:layout_weight="9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/comicbd"
+                            android:text="@string/str_data_prioritas"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/yelow"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_prioritas"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/comicbd"
+                            android:hint="1"
+                            android:textColorHint="@color/yelow"
+                            android:textAlignment="center"
+                            android:backgroundTint="@color/dark_teal"
+                            android:inputType="numberSigned"
+                            android:textColor="@color/yelow"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                    <SeekBar
+                        android:id="@+id/sb_prioritas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:thumbTint="@color/yelow"
+                        android:progressTint="@color/dark_blue"
+                        android:min="0"
+                        android:max="10"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_tanda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:buttonTint="@color/yelow"
+                        android:textSize="14sp"
+                        android:text="@string/str_tanda_bisnis" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_cancel"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_btn_red_outline"
+                            android:focusable="false"
+                            android:fontFamily="@font/comicbd"
+                            android:text="@string/str_btn_cancel"
+                            android:textColor="@color/red"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_okay"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_btn_teal_outline"
+                            android:focusable="false"
+                            android:fontFamily="@font/comicbd"
+                            android:text="@string/str_btn_okey"
+                            android:textColor="@color/teal"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
